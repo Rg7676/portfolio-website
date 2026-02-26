@@ -34,8 +34,8 @@ export function HeroSection() {
 					<Github size={15} /> GitHub
 				</a>
 				<a
-					href='./Rahman_Gurbanmuhammedow_CV.pdf'
-					download
+					href={profile.cv}
+					download='Rahman_Gurbanmuhammedow_CV.pdf'
 					className='inline-flex items-center gap-2 rounded-full border border-base-300 px-4 py-2 text-sm text-base-700 transition-colors hover:border-base-500 hover:text-base-900 dark:border-base-700 dark:text-base-200 dark:hover:border-base-500 dark:hover:text-base-50'
 				>
 					<Paperclip size={15} /> Скачать CV
