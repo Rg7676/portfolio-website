@@ -31,10 +31,10 @@ export function ContactSection() {
   return (
     <Section id="contact" title="Контакты" className="mt-24">
       <div className="grid gap-10 md:grid-cols-[1fr_1.3fr]">
-        <div className="space-y-4">
+        <div className="flex flex-col items-start gap-4">
           <a
             href={`mailto:${profile.email}`}
-            className="inline-flex items-center gap-2 text-base-600 transition-colors hover:text-base-900 dark:text-base-300 dark:hover:text-base-50"
+            className="inline-flex w-fit items-center gap-2 text-base-600 transition-colors hover:text-base-900 dark:text-base-300 dark:hover:text-base-50"
           >
             <Mail size={16} /> {profile.email}
           </a>
@@ -42,15 +42,23 @@ export function ContactSection() {
             href={profile.github}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 text-base-600 transition-colors hover:text-base-900 dark:text-base-300 dark:hover:text-base-50"
+            className="inline-flex w-fit items-center gap-2 text-base-600 transition-colors hover:text-base-900 dark:text-base-300 dark:hover:text-base-50"
           >
             <Github size={16} /> github.com/Rg7676
+          </a>
+          <a
+            href={profile.telegram}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex w-fit items-center gap-2 text-base-600 transition-colors hover:text-base-900 dark:text-base-300 dark:hover:text-base-50"
+          >
+            <Send size={16} /> t.me/kleemann55
           </a>
 
           <button
             type="button"
             onClick={handleCopyEmail}
-            className="inline-flex items-center gap-2 rounded-full border border-base-300 px-3 py-1.5 text-sm text-base-700 transition-colors hover:border-base-500 hover:text-base-900 dark:border-base-700 dark:text-base-300 dark:hover:border-base-500 dark:hover:text-base-50"
+            className="inline-flex w-fit items-center gap-2 rounded-full border border-base-300 px-3 py-1.5 text-sm text-base-700 transition-colors hover:border-base-500 hover:text-base-900 dark:border-base-700 dark:text-base-300 dark:hover:border-base-500 dark:hover:text-base-50"
           >
             {copied ? <Check size={14} /> : <Copy size={14} />}
             {copied ? 'Скопировано' : 'Скопировать email'}

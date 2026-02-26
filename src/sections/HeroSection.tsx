@@ -1,4 +1,4 @@
-import { Github, Mail, Paperclip } from 'lucide-react'
+import { Github, Mail, Paperclip, Send } from 'lucide-react'
 import { Section } from '../components/Section'
 import { profile } from '../data/portfolio'
 
@@ -32,6 +32,14 @@ export function HeroSection() {
 					className='inline-flex items-center gap-2 rounded-full border border-base-300 px-4 py-2 text-sm text-base-700 transition-colors hover:border-base-500 hover:text-base-900 dark:border-base-700 dark:text-base-200 dark:hover:border-base-500 dark:hover:text-base-50'
 				>
 					<Github size={15} /> GitHub
+				</a>
+				<a
+					href={profile.telegram}
+					target='_blank'
+					rel='noreferrer'
+					className='inline-flex items-center gap-2 rounded-full border border-base-300 px-4 py-2 text-sm text-base-700 transition-colors hover:border-base-500 hover:text-base-900 dark:border-base-700 dark:text-base-200 dark:hover:border-base-500 dark:hover:text-base-50'
+				>
+					<Send size={15} /> Telegram
 				</a>
 				<a
 					href={profile.cv}

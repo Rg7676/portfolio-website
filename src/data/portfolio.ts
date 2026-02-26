@@ -13,6 +13,7 @@ export const profile = {
   location: 'Turkmenistan',
   email: 'rahman020205@gmail.com',
   github: 'https://github.com/Rg7676',
+  telegram: 'https://t.me/kleemann55',
   cv: '/Rahman_Gurbanmuhammedow_CV.pdf',
   summary:
     'Создаю практичные fullstack-продукты с чистой архитектурой, строгой типизацией и поддерживаемыми интерфейсами. Фокусируюсь на надежной инженерии, быстрой итерации и коде, который остается понятным в долгой перспективе.',
