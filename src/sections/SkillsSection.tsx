@@ -6,7 +6,7 @@ export function SkillsSection() {
     <Section
       id="skills"
       title="Навыки"
-      subtitle="Ключевые технологии, которые я использую для чистого frontend и надежного backend."
+      subtitle="Frontend-стек, с которым я строю быстрые и поддерживаемые React-приложения."
       className="mt-24"
     >
       <div className="grid gap-8 sm:grid-cols-2">

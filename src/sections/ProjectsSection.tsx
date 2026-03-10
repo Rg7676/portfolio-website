@@ -7,7 +7,7 @@ export function ProjectsSection() {
     <Section
       id="projects"
       title="Проекты"
-      subtitle="Выбранные работы с чистой архитектурой, практичным UX и поддерживаемой реализацией."
+      subtitle="Frontend-проекты на React и Next.js с упором на UX, типизацию и архитектуру компонентов."
       className="mt-24"
     >
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
